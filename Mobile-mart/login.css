@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        powderblue,
+        #4b7bec,
+        blue
+    );
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+.login-card {
+    padding: 40px;
+
+    background-color: aliceblue;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.3);
+
+    animation: appear 1s ease;
+}
+
+.logo {
+    text-align: center;
+
+    font-size: 32px;
+    font-weight: bold;
+
+    color: blue;
+
+    margin-bottom: 20px;
+}
+
+.login-card h1 {
+    text-align: center;
+    color: purple;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+
+    margin: 10px 0 25px;
+}
+
+.login-card label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: green;
+
+    font-weight: bold;
+}
+
+.login-card input[type="email"],
+.login-card input[type="password"] {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.login-card input:focus {
+    border-color: #4CAF50;
+
+    box-shadow:
+        0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+.remember {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.remember label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin: 0;
+}
+
+.remember input {
+    width: auto;
+}
+
+.remember a {
+    color: blue;
+    text-decoration: none;
+}
+
+.login-card button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        skyblue,
+        blue
+    );
+
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.login-card button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.register-text {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #555;
+}
+
+.register-text a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}

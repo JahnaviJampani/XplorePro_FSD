@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f5f8fc;
+}
+
+
+/* HEADER */
+
+header {
+    padding: 15px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(
+        powderblue,
+        blue
+    );
+}
+
+.logo {
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    text-shadow: 2px 2px 3px black;
+}
+
+nav {
+    display: flex;
+
+    gap: 12px;
+}
+
+nav a {
+    padding: 9px 15px;
+
+    background-color: beige;
+
+    color: brown;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* TITLE */
+
+.title {
+    text-align: center;
+
+    margin-top: 50px;
+
+    color: purple;
+
+    font-size: 40px;
+}
+
+.subtitle {
+    text-align: center;
+
+    margin: 10px 0 40px;
+
+    color: #777;
+}
+
+
+/* CONTACT */
+
+.contact-container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+
+    gap: 30px;
+
+    padding: 20px;
+}
+
+
+/* INFO */
+
+.contact-info {
+    flex: 1;
+
+    padding: 35px;
+
+    background: linear-gradient(
+        135deg,
+        skyblue,
+        #4b7bec
+    );
+
+    color: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info h2 {
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    margin: 20px 0;
+
+    line-height: 1.5;
+}
+
+.contact-info h3 {
+    margin-top: 35px;
+}
+
+.social {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 15px;
+
+    flex-wrap: wrap;
+}
+
+.social a {
+    padding: 8px 12px;
+
+    background-color: white;
+
+    color: blue;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* FORM */
+
+.contact-form {
+    flex: 1;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    color: purple;
+
+    margin-bottom: 25px;
+}
+
+.contact-form label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: green;
+
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #4CAF50;
+
+    box-shadow:
+        0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        skyblue,
+        blue
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 15px rgba(0, 0, 0, 0.2);
+}
